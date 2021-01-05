@@ -1,23 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import HeaderElement from './Components/header/HeaderElement';
+import SiderElement from './Components/sider/SiderElement';
+import ContentElement from './Components/content/ContentElement';
+import $ from 'jquery';
+
+$(document).ready(function(){
+$('.sidebar-toggle').on('click', function () {
+    $(this).toggleClass('active');
+
+    $('#sidebar').toggleClass('shrinked');
+    $('.page-content').toggleClass('active');
+    $(document).trigger('sidebarChanged');
+
+    if ($('.sidebar-toggle').hasClass('active')) {
+        $('.navbar-brand .brand-sm').addClass('visible');
+        $('.navbar-brand .brand-big').removeClass('visible');
+    } else {
+        $('.navbar-brand .brand-sm').removeClass('visible');
+        $('.navbar-brand .brand-big').addClass('visible');
+    }
+});
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HeaderElement />
+      <div class="d-flex align-items-stretch">
+      <SiderElement />
+      <ContentElement />
+      </div>
     </div>
   );
 }
