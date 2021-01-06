@@ -1,10 +1,5 @@
 import React, {Component} from 'react';
-import '../../Stylesheet/vendor/bootstrap/css/bootstrap.min.css';
-import '../../Stylesheet/vendor/font-awesome/css/font-awesome.min.css';
-import '../../Stylesheet/css/font.css';
-import '../../Stylesheet/css/style.default.css';
-import '../../Stylesheet/css/custom.css';
-
+import '../sider/siderElement.css';
 
 class SiderElement extends Component {
     render() {

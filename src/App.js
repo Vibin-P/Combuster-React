@@ -1,5 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import '../src/Stylesheet/vendor/bootstrap/css/bootstrap.min.css';
+import '../src/Stylesheet/vendor/font-awesome/css/font-awesome.min.css';
+import '../src/Stylesheet/css/font.css';
+// import '../../Stylesheet/css/style.default.css';
 import HeaderElement from './Components/header/HeaderElement';
 import SiderElement from './Components/sider/SiderElement';
 import ContentElement from './Components/content/ContentElement';

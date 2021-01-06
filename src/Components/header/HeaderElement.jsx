@@ -1,16 +1,12 @@
 import React, {Component} from 'react';
-import '../../Stylesheet/vendor/bootstrap/css/bootstrap.min.css';
-import '../../Stylesheet/vendor/font-awesome/css/font-awesome.min.css';
-import '../../Stylesheet/css/font.css';
-import '../../Stylesheet/css/style.default.css';
-import '../../Stylesheet/css/style.default.css';
+import '../header/headerElement.css';
 
 class HeaderElement extends Component {
     render() {
         return(
             <header class="header">
             <nav class="navbar navbar-expand-lg">
-              <div class="search-panel">
+              {/* <div class="search-panel">
                 <div class="search-inner d-flex align-items-center justify-content-center">
                   <div class="close-btn">Close <i class="fa fa-close"></i></div>
                   <form id="searchForm" action="#">
@@ -20,7 +16,7 @@ class HeaderElement extends Component {
                     </div>
                   </form>
                 </div>
-              </div>
+              </div> */}
               <div class="container-fluid d-flex align-items-center justify-content-between">
                 <div class="navbar-header">
                   {/* <!-- Navbar Header--> */}

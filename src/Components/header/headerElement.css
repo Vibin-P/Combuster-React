@@ -1,0 +1,144 @@
+/*
+* ==========================================================
+*     HEADER STYLING 
+* ==========================================================
+*/
+
+header {
+    font-family: "Muli", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #8a8d93;
+    background-color: #fff;
+  }
+  nav.navbar {
+    background: #131633;
+    color: #8a8d93;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #212840;
+    z-index: 10;
+  }
+  nav.navbar a {
+    color: inherit;
+  }
+  .navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+  }
+  nav.navbar .brand-text.visible {
+    display: block;
+  }
+  nav.navbar .brand-text {
+    display: none;
+    font-weight: 300;
+  }
+  .text-uppercase {
+    letter-spacing: 0.1em;
+  }
+  .text-primary {
+    color: #42dbdc !important;
+  }
+  i, span, strong {
+    display: inline-block;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  nav.navbar .sidebar-toggle {
+    width: 36px;
+    height: 36px;
+    line-height: 29px;
+    text-align: center;
+    background: #131633;
+    color: #8a8d93;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+  }
+  i[class*='icon-'] {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+
+/* Navbar Media Query ----------------------------------- */
+@media (max-width: 1199px) {
+    nav.navbar .right-menu {
+      margin-bottom: -3px;
+    }
+    nav.navbar .navbar-brand {
+      margin-right: 5px;
+    }
+    /* nav.navbar .search-inner form input {
+      font-size: 1.25rem !important;
+    }
+    nav.navbar .search-inner form button.submit {
+      position: absolute;
+      font-size: 2rem;
+      top: 50px;
+      display: block;
+      width: 100%;
+    } */
+    nav.navbar .sidebar-toggle {
+      width: 30px;
+      height: 30px;
+      line-height: 25px;
+      font-size: 1rem;
+    }
+    nav.navbar .messages-toggle,
+    nav.navbar .tasks-toggle {
+      margin-right: 0;
+    }
+    nav.navbar .brand-text {
+      display: none !important;
+    }
+    nav.navbar .brand-text.visible {
+      display: none !important;
+    }
+    nav.navbar .brand-text.brand-sm {
+      display: block !important;
+    }
+    nav.navbar .sidebar-toggle {
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+    }
+  }
+  
+  @media (max-width: 991px) {
+    nav.navbar .dropdown-menu {
+      right: -140px;
+    }
+    nav.navbar .megamenu {
+      right: 0 !important;
+    }
+    nav.navbar a.nav-link {
+      font-size: 0.85rem;
+    }
+    nav.navbar a.nav-link .badge {
+      width: 16px;
+      height: 16px;
+      line-height: 16px;
+      color: #fff;
+      text-align: center;
+      font-size: 0.6rem;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    nav.navbar .dropdown {
+      position: static;
+    }
+    nav.navbar .dropdown-menu {
+      width: 90vw;
+      right: 2.5vw;
+      left: 2.5vw;
+      margin: 0 auto;
+    }
+  }
+  
+  
