@@ -1,10 +1,15 @@
 import React, { Component } from "react";
-import '../content/contentElement.css';
+import HeaderElement from '../header/HeaderElement';
+import SiderElement from '../sider/SiderElement';
 
 class ContentElement extends Component {
     render() {
         return(
-            <div class="page-content">
+          <div>
+            <HeaderElement />
+          <div class="d-flex align-items-stretch">
+            <SiderElement />
+          <div class="page-content">
             {/* <!-- Breadcrumb--> */}
             <div class="container-fluid">
                 <ul class="breadcrumb">
@@ -163,6 +168,8 @@ class ContentElement extends Component {
               </div>
             </footer>
           </div>
+        </div>
+      </div>
         )
     }
 }

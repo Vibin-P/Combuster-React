@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import '../sider/siderElement.css';
 
 class SiderElement extends Component {
     render() {
