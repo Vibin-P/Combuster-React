@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import HeaderElement from '../header/HeaderElement';
-import SiderElement from '../sider/SiderElement';
+import HeaderElement from '../../tables/header/HeaderElement';
+import SiderElement from '../../tables/sider/SiderElement';
+import FooterElement from '../../tables/footer/FooterElement';
 
 class TableElement extends Component {
   render() {
     return (
-      <div>
+    <div>
       <HeaderElement />
     <div class="d-flex align-items-stretch">
       <SiderElement />
@@ -183,14 +184,7 @@ class TableElement extends Component {
             </div>
           </div>
         </section>
-        <footer class="footer">
-              <div class="footer__block block no-margin-bottom">
-                <div class="container-fluid text-center">
-                  {/* <!-- Please do not remove the backlink to us unless you support us at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)--> */}
-                  <p class="no-margin-bottom">2019 &copy; Powered By <a href="#">Vaigunth EnerTek (Pvt.) Ltd.</a>.</p>
-                </div>
-              </div>
-            </footer>
+        <FooterElement />
         </div>
       </div>
     </div>

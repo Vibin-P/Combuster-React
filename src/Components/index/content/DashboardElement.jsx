@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-import HeaderElement from '../header/HeaderElement';
-import SiderElement from '../sider/SiderElement';
+import HeaderElement from '../../index/header/HeaderElement';
+import SiderElement from '../../index/sider/SiderElement';
+import FooterElement from '../../index/footer/FooterElement';
 
-class ContentElement extends Component {
+class DashboardElement extends Component {
     render() {
         return(
           <div>
@@ -13,7 +14,7 @@ class ContentElement extends Component {
             {/* <!-- Breadcrumb--> */}
             <div class="container-fluid">
                 <ul class="breadcrumb">
-                  <li class="breadcrumb-item">EnerTek</li>
+                <li class="breadcrumb-item"><a href="index.html">EnerTek</a></li>
                   <li class="breadcrumb-item active">Dashboard</li>
                 </ul>
               </div>
@@ -159,18 +160,11 @@ class ContentElement extends Component {
                 </div>
               </div>
             </section>
-            <footer class="footer">
-              <div class="footer__block block no-margin-bottom">
-                <div class="container-fluid text-center">
-                  {/* <!-- Please do not remove the backlink to us unless you support us at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)--> */}
-                  <p class="no-margin-bottom">2019 &copy; Powered By <a href="#">Vaigunth EnerTek (Pvt.) Ltd.</a>.</p>
-                </div>
-              </div>
-            </footer>
+              <FooterElement />
           </div>
         </div>
       </div>
         )
     }
 }
-export default ContentElement;
+export default DashboardElement;
