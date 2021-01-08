@@ -7,7 +7,7 @@ $(function () {
     // Tooltips init
     // ------------------------------------------------------ //    
 
-    $('[data-toggle="tooltip"]').tooltip()        
+    // $('[data-toggle="tooltip"]').tooltip()        
 
     // ------------------------------------------------------- //
     // Universal Form Validation
